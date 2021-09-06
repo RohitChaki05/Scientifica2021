@@ -1,0 +1,15 @@
+import random
+number = random.randint(1,6)
+number2 = random.randint(1,6)
+ctr=0
+while ctr<2:
+  guess=int(input("Enter Your Guess for the 1st dice: "))
+  guess2=int(input("Enter Your Guess for the 2nd dice: "))  
+  if guess==number and guess2==number2:
+    print("You Win!")
+    break
+  ctr+=1
+  print("Guess again")
+else:
+  print("You Lose!")
+print("The Numbers on the dice were:",number,"and", number2)
